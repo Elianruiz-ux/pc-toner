@@ -36,7 +36,7 @@ nav {
   padding: 10px 30px;
   background-color: var(--color-blanco);
   width: 100%;
-  height: 50px;
+  height: 55px;
   position: sticky;
   top: 0.1px;
   box-shadow: 0 0 2px var(--color-rojo-opaco-2);
@@ -47,6 +47,10 @@ label.logo {
   cursor: pointer;
 }
 
+nav img{
+  width: 150px;
+}
+
 nav ul {
   float: right;
   margin-right: 20px;
@@ -55,7 +59,7 @@ nav ul {
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin: 5px 5px 10px 20px;
+  margin: 7px 5px 10px 20px;
 }
 
 nav ul li:first-letter {
@@ -102,6 +106,15 @@ nav ul li a:hover span::before {
 
 #check {
   display: none;
+}
+
+.title_content{
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 /*Seccion nosotros*/
@@ -164,6 +177,14 @@ nav ul li a:hover span::before {
   height: 300px;
   border-radius: 10px;
   box-shadow: 2px 4px 7px var(--color-negro-opaco);
+  overflow: hidden;
+  object-fit: contain;
+}
+
+#servicios .cuadrito img,
+#nosotros .cuadrito img {
+  width: 300px;
+  height: 300px;
 }
 
 #servicios .contenido__texto p,
@@ -282,6 +303,7 @@ nav ul li a:hover span::before {
 #contactanos form {
   width: 500px;
   margin: auto;
+  z-index: -100;
 }
 
 #contactanos .tittle {
@@ -289,14 +311,13 @@ nav ul li a:hover span::before {
   text-align: center;
 }
 
-/* div input:focus {
+ div input:focus {
   color: #0000009c;
 }
 
+
 .group {
-  position: relative;
   margin: 10% auto;
-  z-index: -1;
 }
 
 .group textarea {
@@ -306,8 +327,7 @@ nav ul li a:hover span::before {
 .group input,
 .group textarea {
   background: none;
-  color: #0000007c;
-  font-size: 18px;
+
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
@@ -324,7 +344,7 @@ nav ul li a:hover span::before {
 .group textarea:focus ~ label,
 .group textarea:valid ~ label {
   top: -14px;
-  font-size: 12px;
+  padding-left: 70%;
   color: #10181f;
 }
 .group input:focus ~ .bar:before,
@@ -336,10 +356,7 @@ nav ul li a:hover span::before {
   color: #0000007c;
   font-size: 16px;
   font-weight: normal;
-  position: absolute;
   pointer-events: none;
-  left: 5px;
-  top: 10px;
   transition: 300ms ease all;
 }
 
@@ -358,7 +375,7 @@ nav ul li a:hover span::before {
   transition: 300ms ease all;
   left: 0%;
   color: #000;
-} */
+} 
 
 /*Info pro*/
 
@@ -428,7 +445,7 @@ nav ul li a:hover span::before {
 #whatsapp {
   display: flex;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   width: 50px;
   height: 50px;
   background-color: var(--color-negro);
@@ -500,15 +517,112 @@ nav ul li a:hover span::before {
   z-index: -10;
 }
 
+
 #all_content > .content__car {
   width: 100%;
   flex-shrink: 0;
   text-align: center;
+  overflow: hidden;
+}
+
+#all_content > .content__car img{
+  width: 100%;
+  height: 100%;
 }
 
 .cuadro__2 {
   display: none;
 }
+
+
+
+/* seccion footer */
+footer {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 40px 0;  box-shadow: 0 0 20px var(--color-rojo);
+
+}
+
+.footer-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 33.33%;
+  padding: 0 20px;
+}
+
+footer h4 {
+  color: var(--color-blanco);
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: var(--color-blanco);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-links li a:hover {
+  color: var(--color-rojo);
+}
+
+
+.list-unstyled li a{
+  text-decoration: none;
+  color: var(--color-blanco);
+}
+
+.list-unstyled li a:hover{
+  color: var(--color-rojo);
+}
+
+.text-center{
+  color: var(--color-blanco);
+}
+
+.margin{
+  margin-bottom: 100px;
+}
+
+
+.select{
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-negro);
+}
+
+
+
 
 @media (max-width: 900px) {
   /* nav{
@@ -522,12 +636,12 @@ nav ul li a:hover span::before {
   .checkbtn {
     display: block;
   }
-  ul {
+  nav ul {
     position: fixed;
     top: 50px;
     width: 100%;
     height: 200vh;
-    background-color: white;
+    background-color: var(--color-blanco);
     left: -100%;
     text-align: center;
     z-index: 10;
@@ -605,4 +719,23 @@ nav ul li a:hover span::before {
     width: 400px;
     text-align: justify;
   }
+
+  .footer-col{
+    width: 100%;
+  }
 }
+
+
+@media (max-width: 350px) {
+  nav{
+    height: 100px;
+  }
+
+  nav ul{
+    top: 90px;
+  }
+}
+
+
+
+

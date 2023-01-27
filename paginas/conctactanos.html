@@ -15,12 +15,13 @@
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><a href="../index.html"><img src="../assets/logo2.jpg" alt="logo" class="img"></a></label>
+        <label class="logo"><a href="../index.html"><img src="../logo.png" alt="logo" class="img"></a></label>
         <ul>            
             <li><a href="../index.html"><span>Inicio</span></a></li>
                 <li><a href="nosotros.html"><span>Nosotros</span></a> </li>
                 <!-- <li><a href="paginas/productos.html"><span>Productos</span></a></li> -->
                 <li><a href="servicios.html"><span>servicios</span></a></li>
+                <li><a href="tick.html"><span>Tickets</span></a></li>   
                 <li><a href="conctactanos.html"><span>Contactanos</span></a></li>
         </ul>
       </nav>
@@ -33,7 +34,7 @@
                 <form action="">
                     <div class="group">
                         <input type="text" required="required" /><span class="highlight" requiered></span><span
-                            class="bar"></span>
+                        class="bar"></span>
                         <label>Nombre completo</label>
                     </div>
                     <div class="group">
@@ -53,95 +54,58 @@
                     </div>
 
                     <div>
-                        <input type="submit" name="" id="" class="boton">
+                        <input type="submit" name="" id="" class="boton margin">
                     </div>
                     
                 </form>
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Contacto</h4>
+              <ul class="">
+                <li><i class="fas fa-globe"></i> Medellín, Colombia</li>
+                <li><i class="fas fa-phone"></i> Teléfono: +57 311 6302001</li>
+                <li><i class="fas fa-envelope"></i> Email: nstor416@gmail.com</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Enlaces</h4>
+              <ul class="list-unstyled">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="tick.html">Tickets</a></li>
+                <li><a href="conctactanos.html">Contactanos</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Síguenos</h4>
+              <ul class="social-links">
+                <li><a href="https://www.facebook.com/pctonermedellin" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/pctonermedellin" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-row">
+            <div class="footer-col">
+              <p class="text-center">Copyright &copy; 2023 - Todos los derechos reservados</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     <div id="whatsapp">
         <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0" target="_blank">
             <img src="../whatsapp.svg" alt="">
         </a>
     </div>
 
-    <style>
     
-    div input:focus{
-        color: #0000009c;
-    }
-
-
-.group {
-    position: relative;
-    margin: 10% auto;
-  }
- 
-  .group textarea {
-    resize: none;
-  }
- 
-  .group input,
-  .group textarea {
-    background: none;
-    color: #0000007c;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #000000;
-  }
-  .group input:focus,
-  .group textarea:focus {
-    outline: none;
- 
-  }
-  .group input:focus ~ label, .group input:valid ~ label,
-  .group textarea:focus ~ label,
-  .group textarea:valid ~ label {
-    top: -14px;
-    font-size: 12px;
-    color: #10181f;
-  }
-  .group input:focus ~ .bar:before,
-  .group textarea:focus ~ .bar:before {
-    width: 100%;
-  }
- 
- 
-  .group label {
-    color: #0000007c;
-    font-size: 16px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 300ms ease all;
-  }
- 
-  .bar {
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-  .bar:before {
-    content: "";
-    height: 2px;
-    width: 0;
-    bottom: 0px;
-    position: absolute;
-    background: #ff0000;
-    transition: 300ms ease all;
-    left: 0%;
-    color: #000;
-   
-  }
-
-    </style>
 
 
 

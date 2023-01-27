@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
-    <title>Productos</title>
+    <title>Contactanos</title>
 </head>
 <body>
     <nav>
@@ -26,71 +26,45 @@
         </ul>
       </nav>
     <main>
-        <div id="productos">
-            <div class="filtros">
-                <div>
-                    <div class="tittle"><h3>Productos</h3></div>
-                    <div class="descripcion_2"><p>Resultados: 4</p></div>
+        <div id="contactanos">
+            <div>
+                <div class="tittle">
+                    <h3>Tickets</h3>
                 </div>
-                <div>
-                    <div class="seleccion">
-                        <select>
-                        <option value="">Ordenar por defecto</option>
-                        <option value="">Ordenar por popularidad</option>
-                        <option value="">Ordenar por precio</option>
-                        </select>
+                <form action="">
+                    <div class="group">
+                        <input type="text" required="required" /><span class="highlight" requiered></span><span
+                        class="bar"></span>
+                        <label>Nombre completo</label>
                     </div>
-                </div>
-            </div>
-            <div class="contenido">
+                    <div class="group">
+                        <input type="number" required="required" /><span class="highlight" requiered></span><span
+                            class="bar"></span>
+                        <label>Numero de celular</label>
+                    </div>
+                    <div class="group">
+                        <input type="email" required="required" /><span class="highlight" requiered></span><span
+                            class="bar"></span>
+                        <label>Correo electrónico</label>
+                    </div>
+                    <div class="group">
+                        <select name="" id="" class="select" required>
+                            <option selected> </option>
+                            <option value="soporte">Soporte</option>
+                            <option value="suministro">Suministro</option>
+                            <option value="cotizaciones">Cotizaciones</option>
+                        </select>
+                        <label>Selecciona tu necesidad</label>
+                    </div>
 
-                <div class="card">
-                    <a href="info-pro.html">
-                        <div class="img__top"> <img src="../image.png" alt="imagen producto"></div>
-                        <div class="contain__card">
-                            <div class="tittle"><h5>Titulo</h5></div>
-                            <div class="descripcion"><p>$ 33,333 Iva incluido</p></div>
-                            <div><button class="boton">Añadir al carrito</button></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="info-pro.html">
-                        <div class="img__top"> <img src="../image.png" alt="imagen producto"></div>
-                        <div class="contain__card">
-                            <div class="tittle"><h5>Titulo</h5></div>
-                            <div class="descripcion"><p>$ 33,333 Iva incluido</p></div>
-                            <div><button class="boton">Añadir al carrito</button></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="info-pro.html">
-                        <div class="img__top"> <img src="../image.png" alt="imagen producto"></div>
-                        <div class="contain__card">
-                            <div class="tittle"><h5>Titulo</h5></div>
-                            <div class="descripcion"><p>$ 33,333 Iva incluido</p></div>
-                            <div><button class="boton">Añadir al carrito</button></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="info-pro.html">
-                        <div class="img__top"> <img src="../image.png" alt="imagen producto"></div>
-                        <div class="contain__card">
-                            <div class="tittle"><h5>Titulo</h5></div>
-                            <div class="descripcion"><p>$ 33,333 Iva incluido</p></div>
-                            <div><button class="boton">Añadir al carrito</button></div>
-                        </div>
-                    </a>
-                </div>
-                
+                    <div>
+                        <input type="submit" name="" id="" class="boton margin">
+                    </div>
+                    
+                </form>
             </div>
-            
-            
         </div>
     </main>
-
 
     <footer>
         <div class="footer-container">
@@ -128,10 +102,16 @@
           </div>
         </div>
       </footer>
+
     <div id="whatsapp">
         <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0" target="_blank">
             <img src="../whatsapp.svg" alt="">
         </a>
     </div>
+
+    
+
+
+
 </body>
 </html>
