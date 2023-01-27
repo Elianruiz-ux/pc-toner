@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
     <title>Contactanos</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h4>LOGO</h4>
-        </div>
-        <div class="container">
-            <ul>
-                <li><a href="../index.html"><span>Inicio</span></a></li>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="../index.html"><img src="../assets/logo2.jpg" alt="logo" class="img"></a></label>
+        <ul>            
+            <li><a href="../index.html"><span>Inicio</span></a></li>
                 <li><a href="nosotros.html"><span>Nosotros</span></a> </li>
-                <li><a href="productos.html"><span>Productos</span></a></li>
+                <!-- <li><a href="paginas/productos.html"><span>Productos</span></a></li> -->
                 <li><a href="servicios.html"><span>servicios</span></a></li>
                 <li><a href="conctactanos.html"><span>Contactanos</span></a></li>
-            </ul>
-        </div>
-        <div class="carrito">
-            <h4>CARRITO</h4>
-        </div>
-    </nav>
+        </ul>
+      </nav>
     <main>
         <div id="contactanos">
             <div>
@@ -62,9 +61,89 @@
         </div>
     </main>
     <div id="whatsapp">
-        <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0">
+        <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0" target="_blank">
             <img src="../whatsapp.svg" alt="">
         </a>
     </div>
+
+    <style>
+    
+    div input:focus{
+        color: #0000009c;
+    }
+
+
+.group {
+    position: relative;
+    margin: 10% auto;
+  }
+ 
+  .group textarea {
+    resize: none;
+  }
+ 
+  .group input,
+  .group textarea {
+    background: none;
+    color: #0000007c;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000000;
+  }
+  .group input:focus,
+  .group textarea:focus {
+    outline: none;
+ 
+  }
+  .group input:focus ~ label, .group input:valid ~ label,
+  .group textarea:focus ~ label,
+  .group textarea:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: #10181f;
+  }
+  .group input:focus ~ .bar:before,
+  .group textarea:focus ~ .bar:before {
+    width: 100%;
+  }
+ 
+ 
+  .group label {
+    color: #0000007c;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+  }
+ 
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .bar:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #ff0000;
+    transition: 300ms ease all;
+    left: 0%;
+    color: #000;
+   
+  }
+
+    </style>
+
+
+
 </body>
 </html>

@@ -7,42 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC TONER</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <h4>LOGO</h4>
-        </div>
-        <div class="container">
-            <ul>
-                <li><a href="#"><span>Inicio</span></a></li>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="index.html"><img src="../assets/logo2.jpg" alt="logo" class="img"></a></label>
+        <ul>            
+
+            <li><a href="index.html"><span>Inicio</span></a></li>
                 <li><a href="paginas/nosotros.html"><span>Nosotros</span></a> </li>
-                <li><a href="paginas/productos.html"><span>Productos</span></a></li>
+                <!-- <li><a href="paginas/productos.html"><span>Productos</span></a></li> -->
                 <li><a href="paginas/servicios.html"><span>servicios</span></a></li>
                 <li><a href="paginas/conctactanos.html"><span>Contactanos</span></a></li>
-            </ul>
-        </div>
-        <div class="carrito">
-            <h4>CARRITO</h4>
-        </div>
-    </nav>
+               
+    
+        </ul>
+      </nav>
+
 
     <main>
-        <figure class="tarjetas">
-            <div class="tarjetas__contenido">
-              <div class="tarjetas__elemento"><h3>Noticia 1</h3></div>
-              <div class="tarjetas__elemento"><h3>Noticia 2</h3></div>
-              <div class="tarjetas__elemento"><h3>Noticia 3</h3></div>
+        <div class="js-carrusel">
+            <div class="direction disabled" id="direction_left">
+              <i class="fas fa-angle-left"></i>
             </div>
-          </figure>
+            <div class="container__car">
+              <div id="all_content">
+                <div class="content__car">
+                  A
+                </div>
+                <div class="content__car">
+                  B
+                </div>
+                <div class="content__car">
+                  C
+                </div>
+                <div class="content__car">
+                  D
+                </div>
+                <div class="content__car">
+                  E
+                </div>
+              </div>
+            </div>
+            <div class="direction" id="direction_right">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
     </main>
 
+    <style>
+        
+    </style>
+
     <div id="whatsapp">
-        <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0">
+        <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0" target="_blank">
             <img src="whatsapp.svg" alt="">
         </a>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

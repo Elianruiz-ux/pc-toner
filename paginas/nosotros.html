@@ -5,37 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
     <title>Nosotros</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <h4>LOGO</h4>
-      </div>
-      <div class="container">
-        <ul>
-          <li>
-            <a href="../index.html"><span>Inicio</span></a>
-          </li>
-          <li>
-            <a href="nosotros.html"><span>Nosotros</span></a>
-          </li>
-          <li>
-            <a href="productos.html"><span>Productos</span></a>
-          </li>
-          <li>
-            <a href="servicios.html"><span>servicios</span></a>
-          </li>
-          <li>
-            <a href="conctactanos.html"><span>Contactanos</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="carrito">
-        <h4>CARRITO</h4>
-      </div>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><a href="../index.html"><img src="../assets/logo2.jpg" alt="logo" class="img"></a></label>
+      <ul>            
+          <li><a href="../index.html"><span>Inicio</span></a></li>
+              <li><a href="nosotros.html"><span>Nosotros</span></a> </li>
+              <!-- <li><a href="paginas/productos.html"><span>Productos</span></a></li> -->
+              <li><a href="servicios.html"><span>servicios</span></a></li>
+              <li><a href="conctactanos.html"><span>Contactanos</span></a></li>
+      </ul>
     </nav>
-
+     
     <main>
       <div id="servicios">
         <div class="contendor__1">
@@ -66,7 +55,11 @@
         </div>
         <div class="contendor__2">
             <div class="contenido__1">
-              
+              <div class="cuadro cuadro__2">
+                <div class="contenido__cuadro">
+                  <div class="cuadrito"></div>
+                </div>
+              </div>
               <div class="texto">
                 <div class="contenido__texto">
                   <p>
@@ -81,7 +74,7 @@
                   </p>
                 </div>
               </div>
-              <div class="cuadro">
+              <div class="cuadro cuadro__ocultar">
                 <div class="contenido__cuadro">
                   <div class="cuadrito"></div>
                 </div>
@@ -116,7 +109,7 @@
     </main>
 
     <div id="whatsapp">
-        <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0">
+        <a href="https://api.whatsapp.com/send/?phone=573116302001&text&type=phone_number&app_absent=0" target="_blank">
             <img src="../whatsapp.svg" alt="">
         </a>
     </div>
